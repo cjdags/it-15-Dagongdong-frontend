@@ -1,0 +1,64 @@
+/* Container Layout */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 260px 1x;
+    grid-template-areas: "sidebar main";
+    min-height: 100vh;
+    background: #0f172a; /* Deep Navy Background */
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    grid-area: sidebar;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #646cff, #61dafb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-item {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #94a3b8;
+    text-decoration: none;
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    background: rgba(100, 108, 255, 0.2);
+    color: #fff;
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    grid-area: main;
+    padding: 2.5rem;
+    overflow-y: auto;
+  }
+  
+  /* Catchy Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding
