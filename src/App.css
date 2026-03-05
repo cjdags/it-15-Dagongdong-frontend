@@ -1,13 +1,13 @@
-/* Container Layout */
+
 .dashboard-container {
-    display: grid;
-    grid-template-columns: 260px 1x;
-    grid-template-areas: "sidebar main";
-    min-height: 100vh;
-    background: #0f172a; /* Deep Navy Background */
-    color: #f8fafc;
-    font-family: 'Inter', system-ui, sans-serif;
-  }
+  display: grid;
+  grid-template-columns: 260px 1fr; /* FIXED */
+  grid-template-areas: "sidebar main";
+  min-height: 100vh;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, sans-serif;
+}
   
   /* Sidebar Styling */
   .sidebar {
